@@ -1,0 +1,108 @@
+
+MIT License
+
+Copyright (c) 2025 Crypto Surf Game Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-Party Licenses
+
+This project incorporates several open-source libraries and frameworks. 
+Below are the licenses for major dependencies:
+
+### Game Engine
+- **Phaser.js**: MIT License
+- **PixiJS**: MIT License
+
+### Frontend Framework  
+- **React**: MIT License
+- **Next.js**: MIT License
+- **TypeScript**: Apache License 2.0
+
+### Blockchain Libraries
+- **Web3.js**: LGPL-3.0 License
+- **ethers.js**: MIT License
+- **OpenZeppelin Contracts**: MIT License
+
+### Development Tools
+- **Jest**: MIT License
+- **ESLint**: MIT License
+- **Prettier**: MIT License
+
+### Database & Infrastructure
+- **PostgreSQL**: PostgreSQL License (similar to MIT/BSD)
+- **Redis**: BSD 3-Clause License
+- **Docker**: Apache License 2.0
+
+For a complete list of dependencies and their licenses, see package.json 
+and run `npm run license-check` to generate a full license report.
+
+---
+
+## Asset Licensing
+
+### Pixel Art Assets
+All original pixel art assets created for this project are licensed under 
+Creative Commons Attribution 4.0 International (CC BY 4.0), unless 
+otherwise specified.
+
+### Audio Assets
+Original music and sound effects are licensed under Creative Commons 
+Attribution 4.0 International (CC BY 4.0), unless otherwise specified.
+
+### Font Licenses
+- Custom pixel fonts: CC BY 4.0
+- Third-party fonts: See individual font license files
+
+### NFT Assets
+NFT artwork and metadata are subject to additional terms outlined in 
+the smart contracts and NFT terms of service.
+
+---
+
+## Contribution Licensing
+
+By contributing to this project, you agree that your contributions will be 
+licensed under the same MIT License that covers the project. You retain 
+copyright ownership of your contributions while granting the project and 
+its users the rights specified in the MIT License.
+
+---
+
+## Trademark Notice
+
+"Crypto Surf Game" and associated logos are trademarks of the project 
+maintainers. Use of these trademarks is subject to separate trademark 
+usage guidelines.
+
+---
+
+## Export Control Notice
+
+This software may be subject to export control regulations. Users are 
+responsible for ensuring compliance with applicable export control laws 
+and regulations in their jurisdiction.
+
+---
+
+For questions regarding licensing, please contact: legal@cryptosurf.game
+
+
