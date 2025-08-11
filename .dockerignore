@@ -1,0 +1,298 @@
+
+# ==============================================================================
+# Crypto Surf Game - Docker Ignore Configuration
+# ==============================================================================
+# This file tells Docker what files and directories to exclude when building
+# the Docker image, making builds faster and images smaller.
+# ==============================================================================
+
+# ==============================================================================
+# Version Control
+# ==============================================================================
+.git/
+.gitignore
+.gitattributes
+.github/
+
+# Git hooks and configuration
+.git*
+
+# ==============================================================================
+# Documentation
+# ==============================================================================
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+LICENSE
+docs/
+*.md
+
+# ==============================================================================
+# Development Dependencies
+# ==============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Development package lock files (production install will create new ones)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ==============================================================================
+# Environment & Configuration
+# ==============================================================================
+.env*
+!.env.example
+
+# Configuration files
+.eslintrc.*
+.prettierrc*
+jest.config.*
+cypress.config.*
+playwright.config.*
+lighthouse.config.*
+
+# Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================================================================
+# Development & Testing Files
+# ==============================================================================
+# Source TypeScript files (we want compiled JavaScript)
+src/**/*.test.ts
+src/**/*.test.tsx
+src/**/*.spec.ts
+src/**/*.spec.tsx
+
+# Testing directories
+tests/
+test-results/
+coverage/
+.nyc_output/
+playwright-report/
+cypress/
+
+# Development tools
+scripts/development/
+tools/development/
+
+# ==============================================================================
+# Build & Output Directories
+# ==============================================================================
+# We exclude these as they'll be built fresh in the container
+.next/
+out/
+build/
+dist/
+
+# Temporary build files
+.cache/
+.parcel-cache/
+.tmp/
+temp/
+tmp/
+
+# ==============================================================================
+# Assets & Media (Development)
+# ==============================================================================
+# Raw development assets (keep processed/optimized assets)
+assets/raw/
+assets/development/
+assets/mockups/
+assets/psd/
+assets/ai/
+
+# Temporary asset processing files
+.asset-cache/
+temp-assets/
+
+# ==============================================================================
+# Database & Storage
+# ==============================================================================
+# Database files and backups
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.backup
+
+# Database data directories
+postgres-data/
+mongodb-data/
+redis-data/
+
+# ==============================================================================
+# Logs & Monitoring
+# ==============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Monitoring and analytics data
+monitoring-data/
+metrics/
+traces/
+
+# ==============================================================================
+# Docker Development
+# ==============================================================================
+# Docker files used for development only
+docker-compose.yml
+docker-compose.*.yml
+Dockerfile.dev
+Dockerfile.test
+
+# Docker volumes
+volumes/
+
+# ==============================================================================
+# CI/CD & Deployment
+# ==============================================================================
+# CI/CD configuration files
+.github/
+.gitlab-ci.yml
+.circleci/
+.travis.yml
+.drone.yml
+
+# Deployment scripts
+deploy/
+deployment/
+k8s/
+kubernetes/
+terraform/
+
+# ==============================================================================
+# Security & Secrets
+# ==============================================================================
+# Private keys and certificates (should never be in repo anyway)
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Secrets and configuration with sensitive data
+secrets/
+private/
+.env
+.env.*
+!.env.example
+
+# ==============================================================================
+# Game Development Specific
+# ==============================================================================
+# Development game data
+saves/
+userdata/
+player-profiles/
+
+# Asset sources (keep compiled assets)
+sprites/source/
+audio/source/
+fonts/source/
+
+# Game development tools
+game-tools/
+level-editor/
+
+# ==============================================================================
+# Blockchain Development
+# ==============================================================================
+# Smart contract development files
+contracts/
+hardhat.config.*
+truffle-config.*
+.hardhat/
+cache/
+artifacts/
+
+# Blockchain development data
+deployments/
+
+# ==============================================================================
+# Performance & Analysis
+# ==============================================================================
+# Bundle analysis
+bundle-analyzer-report.html
+.bundle-analyzer/
+
+# Performance profiling
+*.cpuprofile
+*.heapprofile
+*.heapsnapshot
+
+# Lighthouse reports
+lighthouse-report.*
+
+# ==============================================================================
+# Operating System
+# ==============================================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ==============================================================================
+# Miscellaneous
+# ==============================================================================
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Large files that shouldn't be in Docker images
+*.iso
+*.dmg
+*.exe
+
+# User-specific configuration
+.user.ini
+user-config.json
+
+# ==============================================================================
+# OPTIMIZATION NOTES
+# ==============================================================================
+# This .dockerignore file is optimized for:
+# 1. Smaller Docker image sizes
+# 2. Faster Docker builds
+# 3. Excluding development-only files
+# 4. Security (no secrets in images)
+# 5. Only including necessary runtime files
+#
+# For production builds, only essential files are included:
+# - Package.json (for dependencies)
+# - Built application code
+# - Necessary configuration files
+# - Runtime assets
+# ==============================================================================
+
+

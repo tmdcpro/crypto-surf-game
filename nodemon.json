@@ -1,0 +1,35 @@
+
+{
+  "watch": [
+    "src",
+    "pages",
+    "components",
+    "utils",
+    "hooks",
+    "styles",
+    "public"
+  ],
+  "ext": "ts,tsx,js,jsx,json",
+  "ignore": [
+    "node_modules",
+    ".next",
+    "out",
+    "build",
+    "dist",
+    "coverage",
+    "test-results",
+    "*.test.ts",
+    "*.test.tsx",
+    "*.spec.ts", 
+    "*.spec.tsx"
+  ],
+  "exec": "next dev",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "delay": "1000",
+  "verbose": true,
+  "restartable": "rs"
+}
+
+
